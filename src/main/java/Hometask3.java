@@ -3,74 +3,64 @@
         3)Доп задание для продвинутых: описать математические операции над некоторыми числами ввиде калькулятора и вывести их на консоль.*/
 public class Hometask3 {
     public static void main(String[] args) {
-        int a=1;
-        int b =1;
-        int c = 1;
-        int d= 1;
-        findMinimum( a, b, c, d);;
-        int sum1=1;
-        int sum2=1;
-        int sum3=1;
-        int sum4=1;
-        findEqual(a, b, c, d, sum1, sum2, sum3, sum4);
+        int a = -10;
+        int b = 0;
+        int c = 0;
+        int d = 1;
+        findMinimum(a, b, c,d );
+        int sum = 0;
+
+        findEqual(a, b, c, sum);
+
     }
 
 
-        public static void findMinimum(int a, int b, int c, int d){
-        if (a<b && a<c && a<d) {
+    public static void findMinimum(int a, int b, int c, int d) {
+        if (a < b && a < c && a < d) {
             System.out.println("Minimum number is " + a);
-        } else if(b<a &&b<c && b<d) {
+        } else if (b < a && b < c && b < d) {
             System.out.println("Minimum number is " + b);
-        } else if(c<a && c<b && c<d) {
+        } else if (c < a && c < b && c < d) {
             System.out.println("Minimum number is " + c);
-        }else {
+        } else {
             System.out.println("Minimum number is " + d);
         }
 
     }
-    public static void findEqual (int a, int b, int c, int d, int sum1, int sum2,int sum3, int sum4) {
-        if (a == b) {
-            sum1+=1;
-       }if (a==c) {
-            sum1+=1;
-        }if (a==d) {
-            sum1+=1;
+
+    public static void findEqual(int a, int b, int c,  int sum) {
+        if (a == b && a!=c) {
+            sum = 2;
+        }if  (a==c && a!=b) {
+            sum=2;
+
+        }if(a==b&& a==c) {
+            sum = 3;
+        }if (a!=b && b==c) {
+                sum = 2;
+            }
+        System.out.println("Quantity of equal numbers : " + sum);
         }
 
-            if (b== a) {
-                sum2+=1;
-            }if (b==c) {
-                sum2+=1;
-            }if (b==d) {
-            sum2+=1;
+    public class Calculator {
+        public static void main(String[] args) {
+            int a=2;
+            int b = 3;
+            doSum(a,b);
+            doDeduction(a,b);
+            doMultiply(a,b);
+            doDivision(a,b);
+    }
+public static void doSum(int a, int b){}
+
+        public static void doDeduction(int a, int b) {
         }
 
-
-                if (c == a) {
-                    ++sum3;
-                }if (c==b) {
-                    ++sum3;
-                }if (c==d) {
-                    sum3++;
-        }
-                if (d == a) {
-                    ++sum4;
-                }if (d==b) {
-                ++sum4;
-                }if (d==c) {
-                ++sum4;
+        public static void doMultiply(int a, int b) {
         }
 
-            if (sum1 >1){
-                System.out.println("Quantity of equal first digit = " +sum1);
-            }if (sum2>1){
-            System.out.println("Quantity of equal second digit = " +sum2);
-            }if (sum3>1){
-            System.out.println("Quantity of equal third digit = " +sum3);
-
-            }if (sum4>1){
-            System.out.println("Quantity of equal forth digit = " +sum4);
-
+        public static void doDivision(int a, int b) {
         }
     }}
+
 
