@@ -3,14 +3,14 @@
         3)Доп задание для продвинутых: описать математические операции над некоторыми числами ввиде калькулятора и вывести их на консоль.*/
 public class Hometask3 {
     public static void main(String[] args) {
-        int a = -10;
-        int b = 0;
-        int c = 0;
-        int d = 1;
-        findMinimum(a, b, c,d );
-        int sum = 0;
+        int a ;
+        int b ;
+        int c ;
+        int d ;
+        findMinimum(1,2,3,5 );
+        int sum;
 
-        findEqual(a, b, c, sum);
+        findEqual(1,1,5,0);
 
     }
 
@@ -41,26 +41,7 @@ public class Hometask3 {
             }
         System.out.println("Quantity of equal numbers : " + sum);
         }
-
-    public class Calculator {
-        public static void main(String[] args) {
-            int a=2;
-            int b = 3;
-            doSum(a,b);
-            doDeduction(a,b);
-            doMultiply(a,b);
-            doDivision(a,b);
+        
     }
-public static void doSum(int a, int b){}
-
-        public static void doDeduction(int a, int b) {
-        }
-
-        public static void doMultiply(int a, int b) {
-        }
-
-        public static void doDivision(int a, int b) {
-        }
-    }}
 
 
